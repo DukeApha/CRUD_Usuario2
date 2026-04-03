@@ -103,6 +103,7 @@
             // dgvUsuarios
             // 
             this.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsuarios.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvUsuarios.Location = new System.Drawing.Point(226, 462);
             this.dgvUsuarios.Name = "dgvUsuarios";
             this.dgvUsuarios.RowHeadersWidth = 51;

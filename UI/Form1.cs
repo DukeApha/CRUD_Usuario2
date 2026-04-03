@@ -63,8 +63,9 @@ namespace CRUD_Usuarios2
         {
             if (!int.TryParse(txtId.Text, out int id))
             {
-                MessageBox.Show("Selecciona un usuario válido");
+                MessageBox.Show("Selecciona un usuario para actualizar");
                 return;
+
             }
 
             Usuario u = new Usuario

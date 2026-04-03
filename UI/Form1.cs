@@ -48,11 +48,9 @@ namespace CRUD_Usuarios2
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtId.Text))
-            {
-                MessageBox.Show("Selecciona un usuario");
-                return;
-            }
+            DialogResult r = MessageBox.Show("¿Seguro que deseas eliminar?", "Confirmar", MessageBoxButtons.YesNo);
+
+            if (r == DialogResult.No) return;
 
             dal.Eliminar(int.Parse(txtId.Text));
             CargarDatos();
@@ -63,8 +61,9 @@ namespace CRUD_Usuarios2
         {
             if (!int.TryParse(txtId.Text, out int id))
             {
-                MessageBox.Show("Selecciona un usuario válido");
+                MessageBox.Show("Selecciona un usuario para actualizar");
                 return;
+
             }
 
             Usuario u = new Usuario

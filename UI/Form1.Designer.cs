@@ -82,22 +82,24 @@
             // 
             // btnEliminar
             // 
+            this.btnEliminar.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnEliminar.Location = new System.Drawing.Point(868, 348);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(151, 78);
             this.btnEliminar.TabIndex = 4;
-            this.btnEliminar.Text = "Elinimar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Text = "Eliminar Usuario";
+            this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnActualizar
             // 
+            this.btnActualizar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnActualizar.Location = new System.Drawing.Point(643, 348);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(143, 78);
             this.btnActualizar.TabIndex = 5;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Text = "Actualizar Usuario";
+            this.btnActualizar.UseVisualStyleBackColor = false;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // dgvUsuarios
@@ -159,7 +161,7 @@
             this.Controls.Add(this.txtId);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gestión de Usuarios";
+            this.Text = "Gestión de Datos";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.ResumeLayout(false);
